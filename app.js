@@ -3,7 +3,7 @@ const screen = document.querySelector(".screen");
 const message = document.querySelector(".message");
 // console.log(button)
 // console.log(screen);
-let realNumber = [];
+// let realNumber = [];
 
 button.addEventListener("click", (e) => {
 
@@ -84,7 +84,7 @@ console.log(realNumber);
 
 for (let i = 0; i < 2; i++) {
   let j = Math.floor(Math.random() * symbols.length);
-  realNumber.push(symbols[i]);
+  realNumber.push(symbols[j]);
 }
 console.log(realNumber);
 
@@ -137,15 +137,12 @@ setTimeout(() => {
   message.innerText = "";
 }, 5000);
 
-
-
- 
-  setTimeout(() => {
-    screen.innerText = "";
-  }, 5000);
-
+setTimeout(() => {
+  screen.innerText = "";
+}, 5000);
 
 });
+
 
 // `${random(realNumber)}`
 
@@ -154,3 +151,6 @@ setTimeout(() => {
   // }, 3000);
 
   //  screen.innerText = `${random(realNumber)}`;
+
+
+
